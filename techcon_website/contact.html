@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us - TechCon 2024</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    /* small inline style to make iframe responsive */
+    .map-wrapper { max-width: 800px; margin: 0 auto; }
+    .map-wrapper iframe { width: 100%; height: 360px; border: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="contact-info">
+      <h2 id="contact-info">Contact Information</h2>
+      <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+      <p>Follow us on:
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a> |
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a> |
+        <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+      </p>
+
+      <div class="map-wrapper" aria-hidden="false" aria-label="Conference location on map">
+        <!-- Public Google Maps embed example (replace place if you want) -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019638526466!2d-122.41941518468112!3d37.77492977975906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5f2b1d45%3A0x6a3a3d2f3a64e6f!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact-form">
+      <h2 id="contact-form">Send us a message</h2>
+      <form action="#" method="post" aria-label="Contact form">
+        <div>
+          <label for="contact-name">Name</label><br>
+          <input type="text" id="contact-name" name="contact-name" required>
+        </div>
+
+        <div>
+          <label for="contact-email">Email</label><br>
+          <input type="email" id="contact-email" name="contact-email" required>
+        </div>
+
+        <div>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>copyright © 2025 TechCon — All rights reserved.</p>
+  </footer>
+</body>
+</html>
